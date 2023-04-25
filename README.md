@@ -207,11 +207,11 @@ Example:
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/Esmatullah12)
-- Twitter: [@twitterhandle](https://twitter.com/Esmatullah173)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/esmatullah-qadeemi-b9951821b/)
+- GitHub: [@githubhandle]()
+- Twitter: [@twitterhandle](https://twitter.com/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/)
 
-👤 **Esmatullah**
+👤 ****
 
 - GitHub: [@githubhandle](https://github.com/githubhandle)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
