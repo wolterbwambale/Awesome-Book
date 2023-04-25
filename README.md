@@ -92,12 +92,16 @@ It will be deployed after merge
 
 <!-- Author -->
 
-👤 ****
+👤 **Bwambale**
 
 - GitHub: [Bwambale](https://github.com/wolterbwambale/)
 - Twitter: [Bwambale](https://twitter.com/BwambaleWolter)
 - LinkedIn: [Bwambale](https://www.linkedin.com/in/bwambale-benny-wolter-a9284925a/)
 
+👤 **Esmatullah Qadeemi**
+- GitHub: []()
+- Twitter: []()
+- LinkedIn: []()
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
