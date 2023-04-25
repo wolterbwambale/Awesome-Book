@@ -91,7 +91,6 @@ It will be deployed after merge
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Author -->
-
 👤 **Bwambale**
 
 - GitHub: [Bwambale](https://github.com/wolterbwambale/)
@@ -99,9 +98,9 @@ It will be deployed after merge
 - LinkedIn: [Bwambale](https://www.linkedin.com/in/bwambale-benny-wolter-a9284925a/)
 
 👤 **Esmatullah Qadeemi**
-- GitHub: []()
-- Twitter: []()
-- LinkedIn: []()
+- GitHub: [](https://github.com/Esmatullah12)
+- Twitter: [](https://twitter.com/Esmatullah173)
+- LinkedIn: [](https://www.linkedin.com/in/esmatullah-qadeemi-b9951821b/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
