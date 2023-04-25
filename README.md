@@ -91,7 +91,6 @@ It will be deployed after merge
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Author -->
-
 👤 **Bwambale**
 
 - GitHub: [Bwambale](https://github.com/wolterbwambale/)
