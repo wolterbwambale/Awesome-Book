@@ -23,6 +23,7 @@
 
 ## 🛠 Built With <a name="built-with"></a>
     HTML
+    CSS
     Javascript
 
 
@@ -111,6 +112,7 @@ It will be deployed after merge
 ## 🔭 Future Features <a name="future-features"></a>
 
 - Implement add function and remove 
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
