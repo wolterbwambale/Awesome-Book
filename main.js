@@ -1,11 +1,3 @@
-/* eslint-disable */ 
-class Book {
-  constructor(title, author) {
-    this.title = title;
-    this.author = author;
-  }
-}
-
 class Library {
   constructor() {
     this.books = JSON.parse(localStorage.getItem('books')) || [];
@@ -17,19 +9,19 @@ class Library {
 
   render() {
     this.booksList.innerHTML = '';
-    this.books.forEach((book) => {
+    this.books.forEach(book => {
       const bookElement = this.createBookElement(book);
       this.booksList.appendChild(bookElement);
     });
   }
 
   addBook(event) {
-    event.preventDefault();
+    event.preventDefault(); 
     const titleInput = document.getElementById('title');
     const authorInput = document.getElementById('author');
     const title = titleInput.value;
     const author = authorInput.value;
-    const newBook = new Book(title, author);
+    const newBook = { title, author};
     this.books.push(newBook);
     localStorage.setItem('books', JSON.stringify(this.books));
     const bookElement = this.createBookElement(newBook);
@@ -37,8 +29,8 @@ class Library {
     this.addBookForm.reset();
   }
 
-  removeBook(title, author) {
-    this.books = this.books.filter((book) => book.title !== title || book.author !== author);
+  removeBook(bookToRemove) {
+    this.books = this.books.filter(book => book !== bookToRemove);
     localStorage.setItem('books', JSON.stringify(this.books));
     this.render();
   }
@@ -47,18 +39,18 @@ class Library {
     const bookApp = document.createElement('div');
     bookApp.classList.add('book');
     bookApp.innerHTML = `
-          <span><p>"${book.title}"</p>by
-          <p>${book.author}</p>
-          <button class="remove-btn">Remove</button></span>
-          
-      `;
+        <p>${book.title}</p>
+        <p>${book.author}</p>
+        <button class="remove-btn">Remove</button>
+        <hr>
+    `;
     const removeButton = bookApp.querySelector('.remove-btn');
     removeButton.addEventListener('click', () => {
-      this.removeBook(book.title, book.author);
-      bookApp.remove();
+        this.removeBook(book);
+        bookApp.remove();
     });
     return bookApp;
   }
 }
-
-const library = new Library();
+  
+const library = new Library();  
