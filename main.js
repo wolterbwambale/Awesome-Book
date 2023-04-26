@@ -9,19 +9,19 @@ class Library {
 
   render() {
     this.booksList.innerHTML = '';
-    this.books.forEach(book => {
+    this.books.forEach((book) => {
       const bookElement = this.createBookElement(book);
       this.booksList.appendChild(bookElement);
     });
   }
 
   addBook(event) {
-    event.preventDefault(); 
+    event.preventDefault();
     const titleInput = document.getElementById('title');
     const authorInput = document.getElementById('author');
     const title = titleInput.value;
     const author = authorInput.value;
-    const newBook = { title, author};
+    const newBook = { title, author };
     this.books.push(newBook);
     localStorage.setItem('books', JSON.stringify(this.books));
     const bookElement = this.createBookElement(newBook);
@@ -30,7 +30,7 @@ class Library {
   }
 
   removeBook(bookToRemove) {
-    this.books = this.books.filter(book => book !== bookToRemove);
+    this.books = this.books.filter((book) => book !== bookToRemove);
     localStorage.setItem('books', JSON.stringify(this.books));
     this.render();
   }
@@ -39,18 +39,17 @@ class Library {
     const bookApp = document.createElement('div');
     bookApp.classList.add('book');
     bookApp.innerHTML = `
-        <p>${book.title}</p>
+        <p>"${book.title}"</p>by
         <p>${book.author}</p>
         <button class="remove-btn">Remove</button>
-        <hr>
     `;
     const removeButton = bookApp.querySelector('.remove-btn');
     removeButton.addEventListener('click', () => {
-        this.removeBook(book);
-        bookApp.remove();
+      this.removeBook(book);
+      bookApp.remove();
     });
     return bookApp;
   }
 }
-  
-const library = new Library();  
+const myLibrary = new Library();
+myLibrary.books();
