@@ -2,3 +2,68 @@
   margin: 0;
   padding: 0;
 }
+
+h1 {
+  text-align: center;
+}
+
+#books-list {
+  text-align: center;
+  border: 2px solid #000;
+  width: 25%;
+  margin: auto;
+}
+
+.book {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#add-btn {
+  margin-left: 13%;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 5px;
+  width: 15%;
+}
+
+input[type="text"]:focus {
+  border: 1px solid rgb(22, 22, 22);
+  outline: none;
+}
+
+.info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+span {
+  display: flex;
+
+  /* background-color: gray; */
+  justify-content: center;
+  gap: 15px;
+  font-size: 16px;
+}
+
+.remove-btn {
+  margin-left: 100px;
+}
+
+.line {
+  width: 5%;
+  margin: 20px auto;
+  font-size: 10px;
+}
+
+.book:nth-child(odd) {
+  background-color: #d8d8d8;
+}

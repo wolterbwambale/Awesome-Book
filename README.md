@@ -23,6 +23,7 @@
 
 ## 🛠 Built With <a name="built-with"></a>
     HTML
+    CSS
     Javascript
 
 
