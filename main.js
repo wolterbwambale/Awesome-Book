@@ -81,4 +81,4 @@ document.querySelectorAll('nav a').forEach((link) => {
 });
 
 showSection('home');
-myLibrary();
+myLibrary.books();
