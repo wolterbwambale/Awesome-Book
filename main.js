@@ -39,8 +39,7 @@ class Library {
     const bookApp = document.createElement('div');
     bookApp.classList.add('book');
     bookApp.innerHTML = `
-        <p>"${book.title}"</p>by
-        <p>${book.author}</p>
+        <p>"${book.title}" by ${book.author}</p>
         <button class="remove-btn">Remove</button>
     `;
     const removeButton = bookApp.querySelector('.remove-btn');
